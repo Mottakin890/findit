@@ -1,3 +1,4 @@
+import 'package:findit/utils/themes/app_theme.dart';
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
@@ -11,7 +12,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ,
+      themeMode: .system,
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
     );
   }
 }
